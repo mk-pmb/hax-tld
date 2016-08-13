@@ -7,7 +7,7 @@
 
 $ORIGIN hax.
 $TTL 600
-    ; ^-- Default TTL for resource records. Should be the same as SOA TTL.
+    ; ^-- Default TTL for resource records. Should be the same as SOA expire.
 
 @   IN SOA (
     ; @   = "A free standing @ is used to denote the current origin."
@@ -28,7 +28,7 @@ $TTL 600
   60
     ; ^-- retry: Delay for repeated attempt if refresh failed.
     ;            Must be lower than refresh.
-  36000
+  600
     ; ^-- expire: Maximum validity timespan for cached records.
   600
     ; ^-- TTL (since RFC 2308: for NXDOMAIN): Max. validity time for NXDOMAIN.
