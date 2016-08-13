@@ -20,7 +20,7 @@ Project status
     * is easy to calculate in your head and
     * can accomodate lots of short-lived updates.
   * [x] Make a comment-explained, readable
-        [zone file example](etc/bind/hax.zone.txt)
+        [zone file example](etc_bind/hax.zone.txt)
     * `# named-checkconf -z`: `zone hax/IN: loaded serial 164131520` […]
   * [x] Make bind9 serve that zone file.
   * [ ] Provide guidance on how to feed changing client IPs to the zone file.
