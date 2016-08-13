@@ -1,0 +1,43 @@
+; -*- coding: utf-8, tab-width: 2 -*-
+
+;=DYNHOST_KEYS /etc/bind/hostlist_keys.txt
+;=DYNHOST_LIST http://api.hax-nic.example.org/host.php?host=.ALL.&key=%KY
+
+$ORIGIN hax.
+$TTL 600
+    ; ^-- Default TTL for resource records. Should be the same as SOA TTL.
+
+@   IN SOA (
+    ; @   = "A free standing @ is used to denote the current origin."
+    ;       [RFC 1035 cited in http://serverfault.com/a/83874]
+    ; IN  = zone class: INternet
+    ; SOA = type of record: Start Of Authority
+
+  ns.hax-nic.example.org.
+    ; ^-- primary master: main DNS server for this zone. Mostly ignored.
+  fake.no-spam.example.net.
+    ; ^-- admin email: Replace "@" -> "." and "." before "@" -> "\."
+  164140000
+    ; ^-- serial: Should only ever increment. See doc/ttl-serials.md
+
+    ; Validity timespans in seconds:
+  300
+    ; ^-- refresh: How often secondary NS shall inquire about changes.
+  60
+    ; ^-- retry: Delay for repeated attempt if refresh failed.
+    ;            Must be lower than refresh.
+  36000
+    ; ^-- expire: Maximum validity timespan for cached records.
+  600
+    ; ^-- TTL (since RFC 2308: for NXDOMAIN): Max. validity time for NXDOMAIN.
+  )
+
+@                 NS      ns.hax-nic.example.org.
+nic               CNAME   www.hax-nic.example.org.
+
+;=======================================================================
+; Write all important stuff above this line!
+; Lines below will be replaced by generated records! ==
+;
+;== BEGIN dynhosts ==
+dummy42           A       127.0.0.42

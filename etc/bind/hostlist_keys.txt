@@ -1,0 +1,3 @@
+# -*- coding: utf-8, tab-width: 2 -*-
+
+hax. = "NX7vvLus-j2I0VQooYo/dI4RLFuqtmHPEbZl7-YG"
