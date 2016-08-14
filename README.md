@@ -23,6 +23,8 @@ Project status
         [zone file example](etc_bind/hax.zone.txt)
     * `# named-checkconf -z`: `zone hax/IN: loaded serial 164131520` […]
   * [x] Make bind9 serve that zone file.
+    * To reload a single zone: `rndc reload hax`
+      Last argument is the zone name = (sub)domain, not a file name.
   * [ ] Provide guidance on how to feed changing client IPs to the zone file.
 
 

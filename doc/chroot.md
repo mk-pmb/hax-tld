@@ -1,8 +1,8 @@
 ﻿
-chroot
-======
+chroot reminder
+===============
 
-Reminder: If the zones list in `named-checkconf -z` differs from
+__Reminder:__ If the zones list in `named-checkconf -z` differs from
 what you see in your log files or syslog, chances are your bind
 is running in a sandbox (probably a chroot).
 Its config directory in `ps aux` may have the same name as yours,
