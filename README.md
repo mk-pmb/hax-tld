@@ -37,3 +37,28 @@ Bind9 resources
     [Bind 9 Server Howto](https://help.ubuntu.com/community/BIND9ServerHowto)
 
 
+
+Related projects and tutorials
+------------------------------
+  * Using other name servers and/or some SQL-y database:
+    *  PowerDNS + MySQL: (german)
+      [Uwe Debacher's DynDNS]( http://www.debacher.de/wiki/Mein_eigenes_DynDNS)
+    * PowerDNS + sqlite3: (german, paywall)
+      "Eigendynamik. Eigener DynDNS-Dienst für den Hausgebrauch und Freunde."
+      [c't 24/2013, S. 196](http://heise.de/-2311284)
+
+  * Not really DynDNS
+    * PHP script to update a redirect-to-IP website (german):
+      "DynDNS im Eigenbau - PC aus dem Web aufrufen"
+      [PC•Welt](http://www.pcwelt.de/tipps/a-7810291.html)
+
+
+
+
+
+
+
+
+
+
+
