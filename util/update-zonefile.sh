@@ -65,7 +65,7 @@ function zfupd_time_to_serial_minute () {
   let YEAR_IN_CENTURY="$TS_YEAR % 1000"
   [ "${YEAR_IN_CENTURY:-0}" -ge 1 ] || return 3
   local TS_DDD=
-  let TS_DDD="(${TS_MONTH#0} * 50) + $TS_DAY"
+  let TS_DDD="(${TS_MONTH#0} * 50) + ${TS_DAY#0}"
   # ^-- strip that leading 0 from month or "let" it will think it's octal.
   # ("let: TS_DDD=(08: value too great for base")
   [ "${TS_DDD:-0}" -ge 1 ] || return 3
@@ -73,6 +73,11 @@ function zfupd_time_to_serial_minute () {
   # Don't worry about leading zeroes in the combined timestamp: We should
   # have verified YEAR_IN_CENTURY >= 1 above and calculated it by modulo.
   echo "$YEAR_IN_CENTURY$TS_DDD$TS_HOURMIN"
+}
+
+
+function zfupd_gen_serial_minute_perl_hack () {
+  date +'print ((%Y-2000), ((1%m*50)+1%d-5100), "%H%M");' | perl
 }
 
 
