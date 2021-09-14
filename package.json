@@ -1,0 +1,21 @@
+{ "name": "hax-tld",
+  "version": "0.0.1",
+  "description": "A bind9 config example for making a private DynDNS TLD.",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/hax-tld/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/hax-tld.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/hax-tld/issues"
+  },
+  "contributors": [],
+
+  "private": true, "license": "ISC",
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
