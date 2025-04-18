@@ -10,13 +10,13 @@ DNS server in their network config.
 chroot reminder
 ---------------
 Does your bind ignore your config file changes? It may be running in a chroot.
-  * [doc/chroot.md](doc/chroot.md) has hints for Plesk.
+  * [docs/chroot.md](docs/chroot.md) has hints for Plesk.
 
 
 
 Project status
 --------------
-  * [x] Invent a [timestamp scheme](doc/ttl-serials.md) that
+  * [x] Invent a [timestamp scheme](docs/ttl-serials.md) that
     * is easy to calculate in your head and
     * can accomodate lots of short-lived updates.
   * [x] Make a comment-explained, readable

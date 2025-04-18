@@ -20,7 +20,7 @@ $TTL 600
   fake.no-spam.example.net.
     ; ^-- admin email: Replace "@" -> "." and "." before "@" -> "\."
   164140000
-    ; ^-- serial: Should only ever increment. See doc/ttl-serials.md
+    ; ^-- serial: Should only ever increment. See docs/ttl-serials.md
 
     ; Validity timespans in seconds:
   300
